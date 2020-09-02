@@ -33,7 +33,10 @@ class CdnAssetPlugin extends Plugin
 		foreach ($asset as $a) {
 			
 			if ( (!$a['disable']) && ($a['css']) ) { 
-				$this->grav['assets']->add($a['css']); 
+				$this->grav['assets']->add($a['css'],[
+						'priority'=>1,
+						'position'=>'after'
+				]); 
 			}
 			
 			if ( (!$a['disable']) && ($a['js']) ) { 

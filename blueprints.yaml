@@ -2,14 +2,14 @@ name: CDN Asset
 version: 0.1
 description: Use CDN as quick optional asset
 icon: cloud
+keywords: plugin, cdn, asset
 author:
   name: tacoen
   email: tacoen@gmail.com
   url: https://github.com/tacoen/
-homepage: https://github.com/tacoen/gasken
-readme: https://github.com/tacoen/gasken/blob/master/README.md
-keywords: plugin, cdn, asset
-bugs: https://github.com/tacoen/gasken/issues
+homepage: https://github.com/tacoen/grav-cdnasset-plugin
+readme: https://github.com/tacoen/grav-cdnasset-plugin/blob/master/README.md
+bugs: https://github.com/tacoen/grav-cdnasset-plugin/issues
 license: MIT
 
 dependencies:
@@ -64,9 +64,15 @@ form:
         default:
             -
                 name: Animate.css
+                css: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'
+                js: null
+                disable: 1
+            
+            -
+                name: Animate.css
                 css: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'
                 js: null
-                disable: 0
+                disable: 1
                 
             -
                 name: chart.js
